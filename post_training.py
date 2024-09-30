@@ -194,7 +194,7 @@ def main(args):
             load_best_model_at_end=True,
             ddp_find_unused_parameters=None,
             group_by_length=args.group_by_length,
-            report_to="wandb",
+            # report_to="wandb",
             run_name=args.output_dir.split('/')[-1],
             metric_for_best_model="{}_loss".format(args.data_path),
         ),
